@@ -1,0 +1,253 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    /* font-family: "Alegreya", serif; */
+    font-family: "Montserrat", sans-serif;
+    top: 0px;
+    left: 0px;
+}
+/*header*/
+header{
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   /*  border-bottom: 1px solid #00000088; */
+}
+header img{
+    width: 200px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a.active {
+   font-weight: 500;
+   border-bottom: 2px solid #f4090d;
+}
+/*home*/
+.heading{
+    font-size: 50px;
+    width: 50%;
+    padding: 70px;
+} 
+.heading h1 .pizza{
+    color: #f4090d;
+}
+.heading .title{
+   background-color: #f4090d9a;
+   width: 75%;
+}
+.image {
+   /*  height: 90vh; */
+    background-image: url("images/pizza-oven-2537308_640.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px solid #e9f37c;
+}
+/*about us*/
+.aboutus{
+    background-color: #FFF1E6;
+}
+.section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.descriptopn{
+    width: 50%;
+    margin-top: 200px;
+}
+.image2 img{
+width: 80%;
+   margin-top: 70px;
+   margin-left: 50px;
+   padding: 50px;
+}
+.descriptopn h1{
+ color: #f4090d;
+ font-size: 50px;
+ margin-left: 100px;
+ /* margin-top: 80px; */
+}
+.descriptopn p{
+    padding: 20pX;
+   /*  margin-top: 50px; */
+    font-size: 25px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+.tomate{
+    margin-left: 50px;
+}
+/*menu*/
+.recepies-text{
+    /*width: 100%; */
+    font-size: 123px; 
+    text-align: center;
+    font-weight: bold; 
+    color: #EDDCD2; 
+    letter-spacing: 3px;  
+    line-height: 0.9; 
+    margin-bottom: -40px;
+}
+.recepies-boxes{
+    /*width: 100%; */
+    display: flex; 
+    flex-direction:row ;
+    justify-content: space-evenly; 
+    align-items: center; 
+    margin-top: 80px; 
+    gap: 30px;
+}
+.recepies {
+    background-color: #fff;
+    /*display: flex;*/
+    height: 100vh;
+    margin: 0;
+}
+.box1{
+    display: flex;
+    gap: 30px;
+}
+.box2{
+    display: flex;
+    gap: 30px;
+}
+.box h2{
+    color: #f4090d;
+}
+.recepies-boxes{
+    gap: 30px;
+}
+.box ul li::marker{
+    color: #f4090d;
+}
+/*contact*/
+.contact {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;  
+   /* min-height: 100vh; */ 
+    background-color: #FFF1E6;
+}
+.contact h1 {
+    margin-bottom: 3rem;
+    color: #f4090d;
+    text-align: center; 
+    font-size: 50px;
+}
+.contact .form {
+   /*  max-width: 30rem;  */
+    margin: auto;
+    margin-bottom: 3rem;
+    text-align: center; 
+    width: 50%;
+   
+}
+.contact .info{
+    margin-bottom: 3rem;
+}
+.contact .info h4{
+    text-align: center;
+    border-bottom: 1px solid #f4090d;
+}
+.contact .containers{
+    width: 100%;
+    display: flex;
+}
+.contact .pizza {
+   width: 50%;
+   height: 40%;
+   margin-left: 50px;
+}
+.contact form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea {
+   /*  width: 100%;  */
+    padding: /* 1.5rem */ 20px 40px; 
+    font-size: 1.5rem;
+    color: black;
+    background-color: /* #ECF39E */ #e7bc91;  
+    border-radius: 5px;
+    border: 1px solid #f4090d;
+    margin: 1rem 0;  
+    resize: none;
+}
+.contact form .btn {
+    display: inline-block;
+    padding: 1rem ; 
+    background: #e7bc91;
+    border-radius: 3rem; 
+    font-size: 1rem;
+    color:rgba(0, 0, 0, 0.904);
+    border: 2px;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+    border: solid 1px #f4090d;
+}
+.btn:hover{
+    transform: scale(1.03);
+    background-color:#f4090d;
+   
+    box-shadow: 0 0 25px #ECF39E;
+}
+/*footer*/
+footer{
+    background-color:/* #fefae0 *//*  #606c38a6 */ #e7bc91;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border-top:1px/*  #00000088 */ #e9f37c solid;
+    bottom: 0;
+    left: 0;
+}
+footer img {
+    width: 200px;
+}
+.ingredients{
+    background-color: #fff;
+}
+.homeimage{
+    display: flex;
+   margin-left: 150px;
+   margin-bottom: 20px;
+}
+.boite{
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+}
+.toptitle h2{
+    color: #f4090d;
+    font-size: 30px;
+    text-align: center;
+}
+.ingredients h3{
+    font-weight: 500;
+}
+.toptitle p{
+    color: #d5e61c;
+    text-align: center;
+}
